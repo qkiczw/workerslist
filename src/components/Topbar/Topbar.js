@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 
 function Topbar() {
     return(
@@ -10,7 +13,7 @@ function Topbar() {
                 </div>
                 <div className='logArea'>
                     <div className="logBtn">
-                        LOG
+                        <FontAwesomeIcon icon={faUser} size="lg"/>
                     </div>
                 </div>
             </header>
