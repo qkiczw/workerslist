@@ -45,3 +45,7 @@ code {
   justify-content: center;
   align-items: center;
 }
+.workersListTable {
+  width: 80%;
+  border: 1px solid darkgray;
+}
