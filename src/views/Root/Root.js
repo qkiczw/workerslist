@@ -5,17 +5,17 @@ import TopBar from '../../components/Topbar/Topbar';
 import WorkersList from '../../components/WorkersList/WorkersList';
 
 // Data
-import data from '../../data/data';
+import workersArray from '../../data/workersArray';
 
 function Root() {
-    const workersTotalAmount = data.length;
+    const workersTotalAmount = workersArray.length;
     return (
         <>
            <div className="appContainer">
                 <TopBar />
                 <p>This is main container</p>
                 <div>W bazie znajduję się {workersTotalAmount} pracowników</div>
-                <WorkersList />
+                <WorkersList workers={workersArray}/>
            </div>
         </>
     )
