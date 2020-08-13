@@ -51,6 +51,9 @@ code {
   justify-content: center;
   align-items: center;
 }
+.workersList-container {
+  width: 75%;
+}
 .workersListTable {
   width: 100%;
   border-spacing: 0;

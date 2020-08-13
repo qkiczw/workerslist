@@ -7,7 +7,7 @@ import { faUserMinus, faEdit, faSortAlphaUp, faInfoCircle } from '@fortawesome/f
 function WorkersList( props ) {
     const [...workers] = props.workers; 
     return (
-        
+        <section className={'workersList-container'}>
             <table className={'workersListTable'}>
                 <thead className={'workersListTable__titles'}>
                     <tr>
@@ -32,6 +32,7 @@ function WorkersList( props ) {
                         )}
                 </tbody>    
             </table>
+        </section>
     )
 }
 
