@@ -14,6 +14,12 @@ code {
   box-sizing: border-box;
   width: 100%;
 }
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .topBar {
   display: flex;
   justify-content: center;
@@ -46,6 +52,50 @@ code {
   align-items: center;
 }
 .workersListTable {
-  width: 80%;
-  border: 1px solid darkgray;
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 20px;
+}
+.workersListTable__titles {
+  background-color: #37474f;
+  color: #ffffff;
+  height: 125px;
+}
+.workersListTable__row:hover{
+background-color: #cfd8dc;
+font-weight: bold;
+transition-duration: 200ms;
+}
+.workersListTable__row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.workersListTable__cell {
+  height: 1.7rem;
+}
+.workersListTable__cell--title {
+  height: 1.7rem;
+}
+.workersListTable__col--name,
+.workersListTable__col--last-name {
+  width: 40%;
+}
+c
+.workersListTable__col--action{
+  width: 10%;
+}
+.workersListTable__col--position{
+  text-align: center;
+  min-width: 10%;
+}
+.workersListTable__col--action {
+  text-align: center;
+  color: #37474f;
+}
+.workersListTable__col--action > .workersListTable__cell__action-icon {
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+th, td {
+  padding: 5px;
 }
